@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="app-container glass-effect">
+        <header class="app-header">
+            <div class="header-text">
+                <h1>Clima</h1>
+                <p>Pronóstico exacto en tiempo real</p>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Busca una ciudad, ej. Madrid..." autocomplete="off" />
+                    <button id="location-btn" class="icon-btn" title="Usar mi ubicación actual">📍</button>
+                </div>
+                <ul id="suggestions-list" class="suggestions-dropdown hidden"></ul>
+            </div>
+        </header>
+
+        <main id="main-content" class="main-content">
+            <div class="empty-state">
+                <div class="empty-icon">🌤️</div>
+                <h2>Bienvenido</h2>
+                <p>Busca una ciudad o permite el acceso a tu ubicación para ver el clima.</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+        <p>
+            &copy; <span id="year"></span> Clima. Desarrollado por Evon Zelaya & Allison Aguilera. 
+            Datos por <a href="https://openweathermap.org/" target="_blank">OpenWeather</a> 
+            & <a href="https://www.openstreetmap.org/" target="_blank">OSM</a>.
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
