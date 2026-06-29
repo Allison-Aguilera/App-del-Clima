@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clima — Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="app-header">
+        <h1>CLIMA</h1>
+    </header>
+
+    <div class="app">
+        <div class="search-wrap">
+            <input type="text" placeholder="Buscar ciudad...">
+            <button class="search-btn">🔍</button>
+        </div>
+
+        <main class="main-content">
+            <section class="card current-weather">
+                <span class="label">Hoy</span>
+                <div class="temp">28°</div>
+                <p class="desc">Parcialmente nublado</p>
+            </section>
+
+            <section class="forecast-horizontal">
+                <div class="day-card"><span>Lun</span><div class="icon">☀️</div><span>30°</span></div>
+                <div class="day-card"><span>Mar</span><div class="icon">🌦️</div><span>29°</span></div>
+                <div class="day-card"><span>Mié</span><div class="icon">🌤️</div><span>33°</span></div>
+                <div class="day-card"><span>Jue</span><div class="icon">⛅</div><span>31°</span></div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
